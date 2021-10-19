@@ -1,0 +1,50 @@
+# save first two columns to properly format Demultiplex sheet for program 
+cut -f 1-2 Demultiplex_Sheet.txt > two_coulmn_Demultiplex_Sheet.txt
+
+# remove the headers from the two column demultiplex sheet 
+emacs two_column_Demultiplex_Sheet.txt > no_header_demultiplex.txt
+
+# Demultiplex step with Barcode splitter 
+barcode_splitter --bcfile no_header_demultiplex.txt Raw_Read1.fq Raw_Read2_Barcodes.fq Raw_Read3.fq --idxread 2 --suffix .fq
+
+# Preparing Barcode split files for TrimGalore and making directories
+mkdir R1_split_files
+mkdir R2_split_files 
+
+# Moving R1 files 
+mv *read-1.fq /home/sassin/version2_sassin_PCOS/R1_split_files 
+# Moving R3 
+mv *read-3.fq /home/sassin/version2_sassin_PCOS/R2_split_files 
+
+#Renaming the R3 files to R2 
+for f in *3.fq; do
+    mv -- "$f" "${f%3.fq}2.fq"
+done
+
+#Renaming the R2 files to _R2
+for f in *-2.fq; do
+    mv -- "$f" "${f%-2.fq}_R2.fq"
+done
+
+#Renaming the R1 files to _R1
+for f in *-1.fq; do
+    mv -- "$f" "${f%-1.fq}_R1.fq"
+done
+
+# Running trim galore 
+trim_galore --paired --q 30 --gzip --fastqc /home/sassin/version2_sassin_PCOS/R1_split_files/*.fq /home/sassin/version2_sassin_PCOS/R2_split_files/*.fq -o trimmed_files/
+
+#Merge R1 and R2 files 
+cd R1_split_files 
+cp *fq /home/sassin/version2_sassin_PCOS/all_split_files
+
+#move back in directory 
+cd ..
+
+#move into R2 file 
+cd R2_split_files
+cp *fq /home/sassin/version2_sassin_PCOS/all_split_files
+
+# Running trim galore 
+trim_galore --q 30 --gzip --fastqc --paired *.fq -o trimmed_files/
+
