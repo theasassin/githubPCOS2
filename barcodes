@@ -48,3 +48,7 @@ cp *fq /home/sassin/version2_sassin_PCOS/all_split_files
 # Running trim galore 
 trim_galore --q 30 --gzip --fastqc --paired *.fq -o trimmed_files/
 
+#creating a samples directory for DADA 2
+~/version2_sassin_PCOS/all_split_files$ ls *_R1.fq | cut -f1 -d "_" > samples
+
+
