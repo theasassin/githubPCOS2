@@ -1,0 +1,103 @@
+# to rename the validated barcode split files (both forward and reverse reads) by the treatments they received (part 1, page 3 of amanda's notebook) 
+
+# renaming the Cohort #1 (Control and Cholesterol) 
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30598/control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30466/control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30202/control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30707/control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30466/control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/28961/control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29573/control_cholesterol/g' *
+
+# now adding cohort 1 to title 
+rename 's/control_cholesterol/Cohort1_control_cholesterol/g' *
+
+# renaming cohort #2 (Control and testosterone)
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30628/Cohort2_control_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29809/Cohort2_control_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30414/Cohort2_control_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29939/Cohort2_control_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30408/Cohort2_control_testosterone/g' *
+
+# renaming cohort #3 (high fat and cholesterol) 
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29273/Cohort3_highfat_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29820/Cohort3_highfat_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30618/Cohort3_highfat_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30243/Cohort3_highfat_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29818/Cohort3_highfat_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30625/Cohort3_highfat_cholesterol/g' *
+
+# renaming cohort #4 (high fat and testosterone) 
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30019/Cohort4_highfat_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29991/Cohort4_highfat_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29926/Cohort4_highfat_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30491/Cohort4_highfat_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29908/Cohort4_highfat_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29696/Cohort4_highfat_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30420/Cohort4_highfat_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/28961/Cohort4_highfat_testosterone/g' *
+
+# renaming part 2 of amanda's notebook (page 13) 
+# cohort #1 
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30302/Cohort1_control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30374/Cohort1_control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29906/Cohort1_control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29898/Cohort1_control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30374/Cohort1_control_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29906/Cohort1_control_cholesterol/g' *
+
+# renaming cohort #2 
+rename 's/29911/Cohort2_control_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30435/Cohort2_control_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30630/Cohort2_control_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30485/Cohort2_control_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29902/Cohort2_control_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29939/Cohort2_control_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29902/Cohort2_control_testosterone/g' *
+
+#renaming cohort #3
+rename 's/30511/Cohort3_highfat_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29387/Cohort3_highfat_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29818/Cohort3_highfat_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30237/Cohort3_highfat_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30508/Cohort3_highfat_cholesterol/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/30237/Cohort3_highfat_cholesterol/g' *
+rename 's/30511/Cohort3_highfat_cholesterol/g' *
+
+#renaming cohort #4
+rename 's/30513/Cohort4_highfat_testosterone/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/copy_trim_val_files$ rename 's/29901/Cohort4_highfat_testosterone/g' *
+rename 's/30503/Cohort4_highfat_testosterone/g' *
+
+
+#creating a new folder with all the renamed files 
+cp *.fq.gz /home/sassin/version2_sassin_PCOS/all_split_files/trimmed_files/all_trimmed_validated_files_renamed
+
+#renaming the tail end of samples to fit the format needed for R studio (needs to be in format SAMPLENAME_R1_001.fastq and SAMPLENAME_R2_001.fastq) 
+rename 's/.Cervix-read_R1_val_1.fq.gz/_Cervix_Validated_R1_001.fq.gz/g' *
+rename 's/.Cervix-read_R2_val_2.fq.gz/_Cervix_Validated_R2_001.fq.gz/g' *
+rename 's/.Oral-read_R1_val_1.fq.gz/_Oral_Validated_R1_001.fq.gz/g' *
+rename 's/.Oral-read_R2_val_2.fq.gz/_Oral_Validated_R2_001.fq.gz/g' *
+rename 's/.Vagina-read_R1_val_1.fq.gz/_Vagina_Validated_R1_001.fq.gz/g' *
+rename 's/.Vagina-read_R2_val_2.fq.gz/_Vagina_Validated_R2_001.fq.gz/g' *
+rename 's/.Anus-read_R1_val_1.fq.gz/_Anus_Validated_R1_001.fq.gz/g' *
+rename 's/.Anus-read_R2_val_2.fq.gz/_Anus_Validated_R2_001.fq.gz/g' *
+rename 's/.Rectal-read_R1_val_1.fq.gz/_Rectal_Validated_R1_001.fq.gz/g' *
+rename 's/.Rectal-read_R2_val_2.fq.gz/_Rectal_Validated_R2_001.fq.gz/g' *
+
+#renaming the Negative Kits 
+rename 's/.Kit.Negative.kit.negative/_Kit.Negative_Kit.Negative/g' *
+rename 's/.Cervix.Kit.Negative.kit.negative/_Kit.Negative_Cervix.Kit/g' *
+rename 's/.Kit.Negative.Cervical3.kit.negative/_Cervical13_Kit.Negative_Cervix.kit/g' *
+rename 's/.Kit.Negative.Cervical4.kit.negative/_Cervical14_Kit.Negative_Cervix.kit/g' *
+rename 's/.Kit.Negative.Vagina1.kit.negative/_Vagina1_Kit.Negative_Vagina.kit/g' *
+rename 's/.Kit.Negative.Vagina2.kit.negative/_Vagina2_Kit.Negative_Vagina.kit/g' *
+rename 's/.Kit.Negative.Vagina3.kit.negative/_Vagina3_Kit.Negative_Vagina.kit/g' *
+rename 's/-read_R2_val_2.fq.gz/_Validated_R2_001.fq.gz/g' *
+rename 's/-read_R1_val_1.fq.gz/_Validated_R1_001.fq.gz/g' *
+
+# making everything underscored 
+rename 's/.Cohort1/_Cohort1/g' * 
+rename 's/.Cohort2/_Cohort2/g' *
+rename 's/.Cohort3/_Cohort3/g' *
+rename 's/.Cohort4/_Cohort4/g' *
