@@ -101,3 +101,44 @@ rename 's/.Cohort1/_Cohort1/g' *
 rename 's/.Cohort2/_Cohort2/g' *
 rename 's/.Cohort3/_Cohort3/g' *
 rename 's/.Cohort4/_Cohort4/g' *
+
+
+# make . separated titles 
+rename 's/_Cohort1_control_cholesterol_Vagina_Validated/.Cohort1.control.cholesterol.vagina.validated/g' *
+rename 's/_Cohort1_control_cholesterol_Oral_Validated/.Cohort1.control.cholesterol.oral.validated/g' *
+rename 's/_Cohort1_control_cholesterol_Cervix_Validated/.Cohort1.control.cholesterol.cervix.validated/g' *
+rename 's/_Cohort1_control_cholesterol_Anus_Validated/.Cohort1.control.cholesterol.anus.validated/g' *
+rename 's/_Cohort1_control_cholesterol_Rectal_Validated/.Cohort1.control.cholesterol.rectal.validated/g' *
+
+
+rename 's/_Cohort2_control_testosterone_Vagina_Validated/.Cohort2.control.testosterone.vagina.validated/g' *
+rename 's/_Cohort2_control_testosterone_Oral_Validated/.Cohort2.control.testosterone.oral.validated/g' *
+rename 's/_Cohort2_control_testosterone_Cervix_Validated/.Cohort2.control.testosterone.cervix.validated/g' *
+rename 's/_Cohort2_control_testosterone_Anus_Validated/.Cohort2.control.testosterone.anus.validated/g' *
+rename 's/_Cohort2_control_testosterone_Rectal_Validated/.Cohort2.control.testosterone.rectal.validated/g' *
+
+
+rename 's/_Cohort3_highfat_cholesterol_Vagina_Validated/.Cohort3.highfat.cholesterol.oral.validated/g' *
+#oops
+rename 's/.Cohort3.highfat.cholesterol.oral.validated/.Cohort3.highfat.cholesterol.vagina.validated/g' * 
+#now vagina is matched with vagina samples whew 
+rename 's/_Cohort3_highfat_cholesterol_Oral_Validated/.Cohort3.highfat.cholesterol.oral.validated/g' *
+rename 's/_Cohort3_highfat_cholesterol_Cervix_Validated/.Cohort3.highfat.cholesterol.cervix.validated/g' *
+rename 's/_Cohort3_highfat_cholesterol_Anus_Validated/.Cohort3.highfat.cholesterol.anus.validated/g' *
+rename 's/_Cohort3_highfat_cholesterol_Rectal_Validated/.Cohort3.highfat.cholesterol.rectal.validated/g' *
+
+rename 's/_Cohort4_highfat_testosterone_Vagina_Validated/.Cohort4.highfat.testosterone.vagina.validated/g' *
+rename 's/_Cohort4_highfat_testosterone_Oral_Validated/.Cohort4.highfat.testosterone.oral.validated/g' *
+rename 's/_Cohort4_highfat_testosterone_Cervix_Validated/.Cohort4.highfat.testosterone.cervix.validated/g' *
+rename 's/_Cohort4_highfat_testosterone_Anus_Validated/.Cohort4.highfat.testosterone.anus.validated/g' *
+rename 's/_Cohort4_highfat_testosterone_Rectal_Validated/.Cohort4.highfat.testosterone.rectal.validated/g' *
+
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/all.trimmed.validated.files.renamed$ rename 's/_Validated/.Validated/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/all.trimmed.validated.files.renamed$ rename 's/_Kit.Negative_Kit.Negative/.KitNegative.KitNegative/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/all.trimmed.validated.files.renamed$ rename 's/_Cervical13_Kit.Negative_Cervix.kit/.Cervical3Kit.Negative.Cervixkit/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/all.trimmed.validated.files.renamed$ rename 's/_Cervical14_Kit.Negative_Cervix.kit/.Cervical4Kit.Negative.Cervixkit/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/all.trimmed.validated.files.renamed$ rename 's/Cervix_Kit.Negative_Kit.Negative/CervixKit.NegativeKit.Negative/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/all.trimmed.validated.files.renamed$ rename 's/_Vagina1_Kit.Negative_Vagina.kit/.Vagina1kit.NegativeVagina.kit/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/all.trimmed.validated.files.renamed$ rename 's/_Vagina2_Kit.Negative_Vagina.kit/.Vagina2kit.NegativeVagina.kit/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/all.trimmed.validated.files.renamed$ rename 's/_Vagina3_Kit.Negative_Vagina.kit/.Vagina3kit.NegativeVagina.kit/g' *
+(base) sassin@aagaardlab2:~/version2_sassin_PCOS/all_split_files/trimmed_files/all.trimmed.validated.files.renamed$ rename 's/Kit.Negative.Vagina4.kit.negative/.Vagina4kit.NegativeVagina.kit/g' *
